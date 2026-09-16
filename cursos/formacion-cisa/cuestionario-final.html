@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuestionario final · Dominio 1 | Formación CISA</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-topbar">
+      <a class="catalog-link" href="../../index.html">&larr; Catálogo de cursos</a>
+    </div>
+    <a class="brand" href="index.html">
+      <span>
+        <span class="title">Formación CISA</span>
+        <span class="subtitle">Plan de estudio interactivo</span>
+      </span>
+    </a>
+    <nav class="crumbs">
+        <a href="index.html">Inicio</a>
+        <a href="modulo-1-panorama-cisa.html">1. Panorama</a>
+        <a href="modulo-2-estandares-planificacion.html">2. Estándares</a>
+        <a href="modulo-3-controles-internos.html">3. Controles</a>
+        <a href="modulo-4-auditoria-basada-riesgos.html">4. Riesgos</a>
+        <a href="modulo-5-tipos-de-auditoria.html">5. Tipos de auditoría</a>
+        <a href="modulo-6-ejecucion-y-evidencia.html">6. Ejecución</a>
+        <a href="modulo-7-informes-comunicacion.html">7. Informes</a>
+        <a href="glosario-dominio-1.html">Glosario D1</a>
+        <span class="here">Examen D1</span>
+        <a href="modulo-8-egit-marcos-gobierno.html">8. EGIT</a>
+        <a href="modulo-9-normativa-ti.html">9. Normativa TI</a>
+        <a href="modulo-10-estructura-organizacional.html">10. Estructura</a>
+        <a href="modulo-11-riesgo-empresarial.html">11. Riesgo ERM</a>
+        <a href="modulo-12-madurez-recursos.html">12. Madurez</a>
+        <a href="modulo-13-seguridad-terceros-nube.html">13. Terceros/Nube</a>
+        <a href="modulo-14-rendimiento-ti.html">14. Rendimiento TI</a>
+        <a href="glosario-dominio-2.html">Glosario D2</a>
+        <a href="cuestionario-final-2.html">Examen D2</a>
+        <a href="modulo-15-caso-negocio-factibilidad.html">15. Caso de negocio</a>
+        <a href="modulo-16-adquisicion-hardware-software.html">16. Adquisición HW/SW</a>
+        <a href="modulo-17-metodologias-prueba.html">17. Metodologías prueba</a>
+        <a href="modulo-18-gestion-configuracion-cambios.html">18. Config y cambios</a>
+        <a href="modulo-19-migracion-datos-infraestructura.html">19. Migración datos</a>
+        <a href="modulo-20-implementacion-revision-cierre.html">20. Implement. y cierre</a>
+        <a href="modulo-21-mantenimiento-rol-auditor.html">21. Mantenimiento</a>
+        <a href="glosario-dominio-3.html">Glosario D3</a>
+        <a href="cuestionario-final-3.html">Examen D3</a>
+    </nav>
+  </div>
+</header>
+
+<div class="progress-strip">
+  <div class="wrap">
+    <div class="progress-track"><div class="progress-fill" data-progress-fill></div></div>
+    <div class="progress-label" data-progress-label></div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow-badge" style="display:inline-block;background:var(--ink-900);color:#fff;padding:4px 12px;border-radius:99px;font-size:.78rem;font-weight:700;margin-bottom:10px;">Evaluación global · Dominio 1</span>
+      <h1>Cuestionario final del Dominio 1</h1>
+      <p class="lead">
+        25 preguntas que combinan los siete módulos del Dominio 1, con panel de navegación, marcado de
+        preguntas dudosas, corrección inmediata e informe final con los temas que conviene repasar. Sin
+        penalización por fallo, igual que el examen oficial CISA.
+      </p>
+    </section>
+
+    <div id="exam"></div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">Material de estudio elaborado a partir del contenido oficial de preparación del examen CISA (Dominio 1).</div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/quiz.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    CisaStudy.initProgressStrip();
+
+    QuizEngine.renderExamQuiz("exam", [
+      { topic: "Panorama CISA", q: "¿Cuántos dominios componen el examen CISA?", options: ["Tres", "Cuatro", "Cinco", "Seis"], correct: 2, explain: "El examen CISA se organiza en cinco dominios de conocimiento." },
+      { topic: "Panorama CISA", q: "¿Cuál es el peso del Dominio 1 (Proceso de auditoría a los SI) en el examen?", options: ["12%", "17%", "21%", "27%"], correct: 2, explain: "El Dominio 1 representa el 21% del examen CISA." },
+      { topic: "Panorama CISA", q: "¿Qué acredita la certificación CISA?", options: ["Desarrollo de software", "Auditoría, control y evaluación de sistemas de información", "Gestión de redes exclusivamente", "Marketing digital"], correct: 1, explain: "CISA certifica competencias específicas de auditoría, control y evaluación de sistemas de información." },
+      { topic: "Estándares y planificación", q: "¿Qué diferencia a un estándar de una guía en el marco de ISACA?", options: ["Ambos son obligatorios por igual", "El estándar es obligatorio; la guía orienta su aplicación sin serlo", "La guía es obligatoria y el estándar no", "No existen guías en ISACA"], correct: 1, explain: "Los estándares son de cumplimiento obligatorio; las guías orientan cómo aplicarlos sin serlo." },
+      { topic: "Estándares y planificación", q: "¿Qué es ITAF?", options: ["Un antivirus", "El marco de ISACA que reúne estándares, guías y herramientas de auditoría de SI", "Una certificación alternativa a CISA", "Un lenguaje de script de auditoría"], correct: 1, explain: "ITAF (IT Audit Framework) es el marco integral de ISACA para la auditoría y el aseguramiento de SI." },
+      { topic: "Estándares y planificación", q: "Dentro de la planificación de una auditoría, el 'alcance' define...", options: ["El presupuesto del equipo auditor", "Los sistemas, funciones o unidades específicas incluidas en la revisión", "El código de ética aplicable", "La fecha de entrega del informe"], correct: 1, explain: "El alcance delimita qué sistemas, funciones o unidades concretas se revisarán." },
+      { topic: "Estándares y planificación", q: "¿Por qué necesita un auditor de SI comprender los procesos de negocio antes de auditar un sistema?", options: ["No lo necesita, basta lo técnico", "Para identificar riesgos relevantes y formular hallazgos con impacto de negocio", "Porque lo exige solo la auditoría forense", "Para reemplazar a la gerencia auditada"], correct: 1, explain: "Entender el proceso de negocio permite priorizar riesgos reales y comunicar hallazgos en términos comprensibles para la gerencia." },
+      { topic: "Controles internos", q: "Un IDS que alerta tras detectar tráfico anómalo es un control...", options: ["Preventivo", "Detectivo", "Correctivo", "No es un control"], correct: 1, explain: "Detecta el evento después de que ha ocurrido, por lo que es un control detectivo." },
+      { topic: "Controles internos", q: "¿Qué diferencia a un objetivo de control de una medida de control?", options: ["No hay diferencia", "El objetivo es el resultado buscado ('qué'); la medida es el procedimiento concreto ('cómo')", "La medida de control siempre es legal y el objetivo no", "Los objetivos de control solo existen en TI"], correct: 1, explain: "El objetivo de control define el propósito; la medida de control es la práctica implementada para lograrlo." },
+      { topic: "Controles internos", q: "La seguridad física del centro de datos es un ejemplo de control...", options: ["Específico de aplicación", "General", "De cumplimiento normativo únicamente", "Correctivo exclusivamente"], correct: 1, explain: "Es un control general porque protege de forma transversal todo el entorno de TI, no una aplicación concreta." },
+      { topic: "Auditoría basada en riesgos", q: "¿Cuál es la ventaja principal de un plan de auditoría basado en riesgo?", options: ["Elimina la necesidad de controles", "Dirige los recursos de auditoría hacia las áreas de mayor impacto potencial", "Reduce el coste del software", "Sustituye al código de ética"], correct: 1, explain: "El enfoque basado en riesgo concentra el esfuerzo limitado de auditoría donde el impacto de una falla sería mayor." },
+      { topic: "Auditoría basada en riesgos", q: "Contratar un seguro para cubrir pérdidas de un incidente es un ejemplo de la respuesta al riesgo denominada...", options: ["Evitar", "Mitigar", "Transferir", "Aceptar"], correct: 2, explain: "Transferir traslada el impacto financiero del riesgo a un tercero, como una aseguradora." },
+      { topic: "Auditoría basada en riesgos", q: "¿Qué es el riesgo residual?", options: ["El riesgo antes de aplicar controles", "El riesgo que permanece después de aplicar los controles existentes", "Un sinónimo de amenaza", "El riesgo que asume un tercero"], correct: 1, explain: "El riesgo residual es el nivel de riesgo que queda tras la aplicación de los controles vigentes." },
+      { topic: "Tipos de auditoría", q: "¿Qué tipo de auditoría tiene como propósito principal desarrollar evidencia para autoridades policiales o judiciales?", options: ["Operativa", "Forense", "Administrativa", "Financiera"], correct: 1, explain: "La auditoría forense se especializa en descubrir fraudes y delitos, generando evidencia con validez legal." },
+      { topic: "Tipos de auditoría", q: "¿Quién ejecuta el monitoreo continuo?", options: ["El auditor externo", "La propia organización, como parte de sus controles", "Un regulador externo", "Nadie, es solo teoría"], correct: 1, explain: "El monitoreo continuo lo realiza la gerencia como función propia de supervisión de sus procesos." },
+      { topic: "Tipos de auditoría", q: "¿Qué documento define el propósito, autoridad y responsabilidad de la función de auditoría interna?", options: ["La carta de compromiso", "El estatuto de auditoría", "El informe de auditoría", "El código de ética"], correct: 1, explain: "El estatuto de auditoría, aprobado por la alta dirección o el comité de auditoría, define esos elementos para la auditoría interna." },
+      { topic: "Tipos de auditoría", q: "Una auditoría que combina pasos de auditoría financiera y operativa con un equipo de habilidades complementarias es una auditoría...", options: ["Continua", "Integrada", "De cumplimiento", "Administrativa"], correct: 1, explain: "La auditoría integrada combina auditoría financiera y operativa, enfocada en el riesgo, con un equipo multidisciplinar." },
+      { topic: "Ejecución y evidencia", q: "¿Cuál es el orden correcto de las tres fases de la auditoría?", options: ["Informes, planificación, trabajo de campo", "Planificación, trabajo de campo y documentación, preparación de informes", "Trabajo de campo, informes, planificación", "Documentación, planificación, informes"], correct: 1, explain: "El ciclo va de planificación a trabajo de campo/documentación y termina en preparación de informes." },
+      { topic: "Ejecución y evidencia", q: "Dentro de los siete pasos de la auditoría de SI, ¿qué paso sigue a 'realizar procedimientos de auditoría'?", options: ["Definir el alcance", "Revisar y evaluar la evidencia", "Establecer los objetivos", "Identificar el criterio"], correct: 1, explain: "Tras ejecutar los procedimientos, el siguiente paso es revisar y evaluar la evidencia obtenida." },
+      { topic: "Ejecución y evidencia", q: "¿Cuál de las siguientes técnicas se considera generalmente MÁS fiable para recopilar evidencia?", options: ["Una declaración oral del auditado", "Una prueba realizada directamente por el propio auditor", "Un informe interno sin verificar", "Un rumor del sector"], correct: 1, explain: "La evidencia obtenida directamente por el auditor (observación, repetición del proceso) es la más fiable." },
+      { topic: "Ejecución y evidencia", q: "¿Cuál es el primer paso del proceso de análisis de datos?", options: ["Ejecutar las pruebas", "Definir el alcance", "Documentar resultados", "Validar los datos"], correct: 1, explain: "El análisis de datos comienza definiendo el alcance antes de identificar, obtener, validar y probar los datos." },
+      { topic: "Ejecución y evidencia", q: "¿Cuál es un beneficio legítimo de la autoevaluación de control (CSA)?", options: ["Sustituir por completo la auditoría tradicional", "Identificar áreas de alto riesgo que podrían necesitar revisión detallada", "Eliminar la necesidad de controles", "Transferir la responsabilidad del control a los auditores"], correct: 1, explain: "La CSA ayuda a priorizar áreas de riesgo, pero no sustituye la auditoría tradicional ni traslada la responsabilidad del control." },
+      { topic: "Informes y seguimiento", q: "Según el estándar de ISACA sobre informes, un buen informe de auditoría debe ser...", options: ["Exclusivamente negativo", "Equilibrado, reconociendo tanto lo negativo como los aspectos positivos", "Redactado sin evidencia de respaldo", "Confidencial incluso para el auditado"], correct: 1, explain: "El estándar 1401 exige un informe equilibrado, con cuestiones negativas y comentarios constructivos positivos." },
+      { topic: "Informes y seguimiento", q: "¿Cuál es el requerimiento PRINCIPAL para informar los resultados de una auditoría de SI?", options: ["Seguir una plantilla estándar", "Estar respaldado por evidencia de auditoría suficiente y apropiada", "Ser exhaustivo sobre toda la empresa", "Estar aprobado únicamente por la gerencia de auditoría"], correct: 1, explain: "El informe debe apoyarse siempre en evidencia de auditoría suficiente y apropiada." },
+      { topic: "Informes y seguimiento", q: "¿De qué depende principalmente el momento en que se realiza el seguimiento de una auditoría?", options: ["Del calendario fiscal", "De la criticidad de los resultados de la auditoría", "Del presupuesto de viajes", "Siempre se hace un año después, sin excepción"], correct: 1, explain: "El momento del seguimiento se ajusta según cuán crítico sea el hallazgo detectado." }
+    ], { quizId: "final" });
+  });
+</script>
+</body>
+</html>

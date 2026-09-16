@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 3 · Controles internos | Formación CISA</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-topbar">
+      <a class="catalog-link" href="../../index.html">&larr; Catálogo de cursos</a>
+    </div>
+    <a class="brand" href="index.html">
+      <span>
+        <span class="title">Formación CISA</span>
+        <span class="subtitle">Plan de estudio interactivo</span>
+      </span>
+    </a>
+    <nav class="crumbs">
+        <a href="index.html">Inicio</a>
+        <a href="modulo-1-panorama-cisa.html">1. Panorama</a>
+        <a href="modulo-2-estandares-planificacion.html">2. Estándares</a>
+        <span class="here">3. Controles</span>
+        <a href="modulo-4-auditoria-basada-riesgos.html">4. Riesgos</a>
+        <a href="modulo-5-tipos-de-auditoria.html">5. Tipos de auditoría</a>
+        <a href="modulo-6-ejecucion-y-evidencia.html">6. Ejecución</a>
+        <a href="modulo-7-informes-comunicacion.html">7. Informes</a>
+        <a href="glosario-dominio-1.html">Glosario D1</a>
+        <a href="cuestionario-final.html">Examen D1</a>
+        <a href="modulo-8-egit-marcos-gobierno.html">8. EGIT</a>
+        <a href="modulo-9-normativa-ti.html">9. Normativa TI</a>
+        <a href="modulo-10-estructura-organizacional.html">10. Estructura</a>
+        <a href="modulo-11-riesgo-empresarial.html">11. Riesgo ERM</a>
+        <a href="modulo-12-madurez-recursos.html">12. Madurez</a>
+        <a href="modulo-13-seguridad-terceros-nube.html">13. Terceros/Nube</a>
+        <a href="modulo-14-rendimiento-ti.html">14. Rendimiento TI</a>
+        <a href="glosario-dominio-2.html">Glosario D2</a>
+        <a href="cuestionario-final-2.html">Examen D2</a>
+        <a href="modulo-15-caso-negocio-factibilidad.html">15. Caso de negocio</a>
+        <a href="modulo-16-adquisicion-hardware-software.html">16. Adquisición HW/SW</a>
+        <a href="modulo-17-metodologias-prueba.html">17. Metodologías prueba</a>
+        <a href="modulo-18-gestion-configuracion-cambios.html">18. Config y cambios</a>
+        <a href="modulo-19-migracion-datos-infraestructura.html">19. Migración datos</a>
+        <a href="modulo-20-implementacion-revision-cierre.html">20. Implement. y cierre</a>
+        <a href="modulo-21-mantenimiento-rol-auditor.html">21. Mantenimiento</a>
+        <a href="glosario-dominio-3.html">Glosario D3</a>
+        <a href="cuestionario-final-3.html">Examen D3</a>
+    </nav>
+  </div>
+</header>
+
+<div class="progress-strip">
+  <div class="wrap">
+    <div class="progress-track"><div class="progress-fill" data-progress-fill></div></div>
+    <div class="progress-label" data-progress-label></div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow">Dominio 1 · Módulo 3 de 7</span>
+      <h1>Controles internos y objetivos de control</h1>
+      <p class="lead">
+        Evaluar controles es el núcleo del trabajo de un auditor de SI. Este módulo distingue los tipos de
+        controles internos, la diferencia entre un objetivo de control y una medida de control, y cómo se
+        clasifican los controles específicos de los sistemas de información.
+      </p>
+      <div class="module-meta">
+        <span class="pill">≈18 min de lectura</span>
+        <span class="pill alt">Núcleo técnico del Dominio 1</span>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">1</span> Qué es un control interno</h2>
+      <div class="intro">
+        <p>
+          Un control interno es cualquier política, procedimiento, práctica o estructura organizativa
+          diseñada para dar una seguridad razonable de que se cumplirán los objetivos de negocio y de que se
+          prevendrán, detectarán o corregirán eventos no deseados. Los controles internos no eliminan el
+          riesgo por completo — ninguna organización puede permitírselo ni sería eficiente hacerlo—, sino que
+          lo reducen a un nivel que la dirección considera aceptable.
+        </p>
+      </div>
+
+      <h3 style="margin:22px 0 10px;font-size:1.05rem;">Clasificación por momento de actuación</h3>
+      <div class="term-grid">
+        <div class="term"><h3>Preventivo</h3><p>Actúa antes de que ocurra el evento no deseado, evitando que se produzca. Ejemplo: exigir autenticación multifactor antes de conceder acceso a un sistema.</p></div>
+        <div class="term"><h3>Detectivo</h3><p>Identifica un evento no deseado después de que ha ocurrido, para poder actuar sobre él. Ejemplo: un sistema de detección de intrusiones (IDS) que alerta sobre tráfico anómalo.</p></div>
+        <div class="term"><h3>Correctivo</h3><p>Corrige el efecto de un evento no deseado una vez detectado, y ayuda a evitar que se repita. Ejemplo: restaurar un sistema desde una copia de seguridad tras un incidente.</p></div>
+      </div>
+
+      <div class="callout tip">
+        <strong>Regla práctica para el examen:</strong> ante cualquier control descrito en un enunciado,
+        pregúntate primero "¿actúa antes, durante/después detectando, o después corrigiendo?". Esa secuencia
+        temporal es la clave para clasificarlo correctamente.
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">2</span> Objetivo de control frente a medida de control</h2>
+      <div class="intro">
+        <p>
+          Son dos conceptos que se confunden con facilidad pero que cumplen funciones distintas dentro de un
+          programa de control:
+        </p>
+      </div>
+
+      <div class="two-col">
+        <div class="card">
+          <h3>Objetivo de control</h3>
+          <p>Una declaración del resultado o propósito que se quiere alcanzar mediante la implementación de
+          procedimientos de control en una actividad concreta. Responde a la pregunta "¿qué queremos
+          conseguir?" — por ejemplo, "garantizar que solo el personal autorizado accede a los datos
+          financieros".</p>
+        </div>
+        <div class="card">
+          <h3>Medida de control (o procedimiento de control)</h3>
+          <p>La política, el procedimiento o la práctica concreta que se implementa para alcanzar ese
+          objetivo. Responde a la pregunta "¿cómo lo conseguimos?" — por ejemplo, "revisión trimestral de los
+          permisos de acceso al sistema financiero".</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">3</span> Objetivos de control de los sistemas de información</h2>
+      <div class="intro">
+        <p>
+          Aplicados específicamente a los sistemas de información, los objetivos de control buscan dar
+          garantías razonables sobre aspectos como los siguientes:
+        </p>
+      </div>
+
+      <ul class="obj-list">
+        <li>Salvaguardar los activos de información (datos, sistemas e infraestructura) frente a accesos, uso o divulgación no autorizados.</li>
+        <li>Garantizar la integridad de los datos almacenados y procesados por el sistema.</li>
+        <li>Asegurar la disponibilidad de los sistemas y datos cuando la organización los necesita.</li>
+        <li>Garantizar la confidencialidad de la información sensible.</li>
+        <li>Comprobar que los sistemas cumplen con las leyes, regulaciones y políticas internas aplicables.</li>
+        <li>Verificar que los procesos de desarrollo, adquisición y mantenimiento de sistemas siguen una metodología controlada.</li>
+        <li>Asegurar que los sistemas de información contribuyen de forma eficiente al logro de los objetivos y metas de la organización.</li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">4</span> Controles generales y controles específicos de SI</h2>
+      <div class="intro">
+        <p>
+          Los controles de sistemas de información se dividen a su vez en dos grandes categorías según su
+          alcance:
+        </p>
+      </div>
+
+      <div class="two-col">
+        <div class="card">
+          <h3>Controles generales</h3>
+          <p>Se aplican de forma transversal a todo el entorno de TI de la organización, sin limitarse a una
+          aplicación concreta. Incluyen, por ejemplo, la gestión de acceso a nivel de sistema operativo, la
+          seguridad física del centro de datos, la gestión de cambios y la continuidad de negocio.</p>
+        </div>
+        <div class="card">
+          <h3>Controles específicos de aplicación</h3>
+          <p>Se implementan dentro de una aplicación o sistema concreto para garantizar la exactitud,
+          integridad y validez de las transacciones que procesa esa aplicación en particular — por ejemplo,
+          validaciones de datos de entrada en un formulario o cálculos automáticos de totales en un sistema
+          de facturación.</p>
+        </div>
+      </div>
+
+      <div class="callout warn">
+        <strong>Por qué importa la distinción:</strong> un fallo en un control general (por ejemplo, una
+        mala gestión de accesos a nivel de sistema operativo) puede anular la eficacia de todos los
+        controles específicos que dependen de él, aunque estos últimos estén bien diseñados. Por eso los
+        auditores suelen evaluar primero los controles generales antes de confiar en los controles de
+        aplicación.
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">✓</span> Repasa lo aprendido</h2>
+      <div class="intro"><p>Seis preguntas rápidas antes de avanzar al módulo 4.</p></div>
+      <div id="quiz-m3"></div>
+    </section>
+
+    <div class="done-toggle">
+      <input type="checkbox" id="done-toggle-input">
+      <label for="done-toggle-input">
+        Marcar este módulo como completado
+        <span class="sub">Se guarda en este navegador y actualiza tu progreso en la portada.</span>
+      </label>
+    </div>
+
+    <div class="module-nav">
+      <a href="modulo-2-estandares-planificacion.html"><span class="dir">← Anterior</span>Estándares, ética y planificación de la auditoría de SI</a>
+      <a class="next" href="modulo-4-auditoria-basada-riesgos.html"><span class="dir">Siguiente módulo →</span>Auditoría basada en riesgos</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">Material de estudio elaborado a partir del contenido oficial de preparación del examen CISA (Dominio 1).</div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/quiz.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    CisaStudy.initProgressStrip("m3");
+    CisaStudy.initDoneToggle("m3");
+
+    QuizEngine.renderSimpleQuiz("quiz-m3", [
+      {
+        q: "Un registro automático que guarda todos los intentos fallidos de inicio de sesión es un control...",
+        options: ["Preventivo", "Detectivo", "Correctivo", "No es un control"],
+        correct: 1,
+        explain: "Registrar los intentos fallidos identifica un evento después de que ha ocurrido, lo que lo clasifica como control detectivo, no preventivo."
+      },
+      {
+        q: "Exigir autenticación multifactor antes de conceder acceso a un sistema es un control...",
+        options: ["Detectivo", "Correctivo", "Preventivo", "De aplicación exclusivamente"],
+        correct: 2,
+        explain: "Actúa antes de que se produzca un acceso indebido, por lo que es un control preventivo."
+      },
+      {
+        q: "¿Qué diferencia a un objetivo de control de una medida de control?",
+        options: ["No hay diferencia real entre ambos", "El objetivo de control es el resultado que se busca ('qué'); la medida de control es el procedimiento concreto para lograrlo ('cómo')", "La medida de control es siempre más importante que el objetivo", "Los objetivos de control solo existen en auditorías financieras"],
+        correct: 1,
+        explain: "El objetivo de control define el propósito perseguido; la medida de control es la práctica concreta implementada para alcanzarlo."
+      },
+      {
+        q: "¿Cuál de las siguientes NO es un objetivo de control típico de los sistemas de información?",
+        options: ["Salvaguardar los activos de información", "Garantizar la integridad de los datos", "Maximizar el número de usuarios con acceso administrador", "Asegurar la disponibilidad de los sistemas"],
+        correct: 2,
+        explain: "Maximizar el número de administradores es contrario al principio de acceso restringido; no es un objetivo de control legítimo."
+      },
+      {
+        q: "La gestión de acceso a nivel de sistema operativo y la seguridad física del centro de datos son ejemplos de...",
+        options: ["Controles específicos de aplicación", "Controles generales", "Objetivos de control financieros", "Medidas de control obsoletas"],
+        correct: 1,
+        explain: "Son controles generales porque se aplican de forma transversal a todo el entorno de TI, no a una aplicación concreta."
+      },
+      {
+        q: "¿Por qué un auditor de SI suele evaluar primero los controles generales antes que los controles de aplicación?",
+        options: ["Porque los controles de aplicación nunca se auditan", "Porque un fallo en un control general puede anular la eficacia de los controles de aplicación que dependen de él", "Porque los controles generales son opcionales", "Porque así lo exige el código de ética"],
+        correct: 1,
+        explain: "Si el control general que los sustenta falla (por ejemplo, una gestión de accesos deficiente), los controles de aplicación bien diseñados pueden quedar sin efecto real."
+      }
+    ]);
+  });
+</script>
+</body>
+</html>
