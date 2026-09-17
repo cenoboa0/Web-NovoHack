@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 44 · Respuesta a incidentes y evidencia forense | Formación CISA</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-topbar">
+      <a class="catalog-link" href="../../index.html">&larr; Catálogo de cursos</a>
+    </div>
+    <a class="brand" href="index.html">
+      <span>
+        <span class="title">Formación CISA</span>
+        <span class="subtitle">Plan de estudio interactivo</span>
+      </span>
+    </a>
+    <nav class="crumbs">
+        <a href="index.html">Inicio</a>
+        <a href="modulo-1-panorama-cisa.html">1. Panorama</a>
+        <a href="modulo-2-estandares-planificacion.html">2. Estándares</a>
+        <a href="modulo-3-controles-internos.html">3. Controles</a>
+        <a href="modulo-4-auditoria-basada-riesgos.html">4. Riesgos</a>
+        <a href="modulo-5-tipos-de-auditoria.html">5. Tipos de auditoría</a>
+        <a href="modulo-6-ejecucion-y-evidencia.html">6. Ejecución</a>
+        <a href="modulo-7-informes-comunicacion.html">7. Informes</a>
+        <a href="glosario-dominio-1.html">Glosario D1</a>
+        <a href="cuestionario-final.html">Examen D1</a>
+        <a href="modulo-8-egit-marcos-gobierno.html">8. EGIT</a>
+        <a href="modulo-9-normativa-ti.html">9. Normativa TI</a>
+        <a href="modulo-10-estructura-organizacional.html">10. Estructura</a>
+        <a href="modulo-11-riesgo-empresarial.html">11. Riesgo ERM</a>
+        <a href="modulo-12-madurez-recursos.html">12. Madurez</a>
+        <a href="modulo-13-seguridad-terceros-nube.html">13. Terceros/Nube</a>
+        <a href="modulo-14-rendimiento-ti.html">14. Rendimiento TI</a>
+        <a href="glosario-dominio-2.html">Glosario D2</a>
+        <a href="cuestionario-final-2.html">Examen D2</a>
+        <a href="modulo-15-caso-negocio-factibilidad.html">15. Caso de negocio</a>
+        <a href="modulo-16-adquisicion-hardware-software.html">16. Adquisición HW/SW</a>
+        <a href="modulo-17-metodologias-prueba.html">17. Metodologías prueba</a>
+        <a href="modulo-18-gestion-configuracion-cambios.html">18. Config y cambios</a>
+        <a href="modulo-19-migracion-datos-infraestructura.html">19. Migración datos</a>
+        <a href="modulo-20-implementacion-revision-cierre.html">20. Implement. y cierre</a>
+        <a href="modulo-21-mantenimiento-rol-auditor.html">21. Mantenimiento</a>
+        <a href="glosario-dominio-3.html">Glosario D3</a>
+        <a href="cuestionario-final-3.html">Examen D3</a>
+        <a href="modulo-22-hardware-activos-interfaces.html">22. Hardware y activos</a>
+        <a href="modulo-23-euc-rendimiento-sistemas.html">23. EUC y rendimiento</a>
+        <a href="modulo-24-infraestructura-red-operaciones-si.html">24. Red y operaciones SI</a>
+        <a href="modulo-25-incidentes-problemas-soporte.html">25. Incidentes y soporte</a>
+        <a href="modulo-26-cambios-configuracion-versiones-parches.html">26. Cambios y versiones</a>
+        <a href="modulo-27-gestion-nivel-servicio-ti.html">27. Nivel de servicio TI</a>
+        <a href="modulo-28-analisis-impacto-negocio-clasificacion.html">28. BIA y criticidad</a>
+        <a href="modulo-29-planificacion-continuidad-negocio.html">29. BCP y desastres</a>
+        <a href="modulo-30-auditoria-continuidad-negocio.html">30. Auditoría BCP</a>
+        <a href="modulo-31-recuperacion-desastres-rpo-rto.html">31. DRP y RPO/RTO</a>
+        <a href="modulo-32-resiliencia-aplicaciones-almacenamiento.html">32. Resiliencia sistemas</a>
+        <a href="glosario-dominio-4.html">Glosario D4</a>
+        <a href="cuestionario-final-4.html">Examen D4</a>
+        <a href="modulo-33-seguridad-privacidad-activos.html">33. Seguridad y privacidad</a>
+        <a href="modulo-34-acceso-fisico-controles-ambientales.html">34. Acceso físico</a>
+        <a href="modulo-35-gestion-identidades-acceso.html">35. Identidades y acceso</a>
+        <a href="modulo-36-control-acceso-logico.html">36. Acceso lógico</a>
+        <a href="modulo-37-fuga-datos-virtualizacion-cliente-servidor.html">37. DLP y virtualización</a>
+        <a href="modulo-38-cortafuegos.html">38. Cortafuegos</a>
+        <a href="modulo-39-ti-invisible-clasificacion-datos.html">39. TI invisible y datos</a>
+        <a href="modulo-40-cifrado-pki.html">40. Cifrado y PKI</a>
+        <a href="modulo-41-byod-movilidad-iot.html">41. BYOD, móviles e IoT</a>
+        <a href="modulo-42-concienciacion-seguridad-ataques.html">42. Concienciación y ataques</a>
+        <a href="modulo-43-pruebas-monitoreo-seguridad.html">43. Pruebas y monitoreo</a>
+        <span class="here">44. Incidentes y forense</span>
+        <a href="glosario-dominio-5.html">Glosario D5</a>
+        <a href="cuestionario-final-5.html">Examen D5</a>
+    </nav>
+  </div>
+</header>
+
+<div class="progress-strip">
+  <div class="wrap">
+    <div class="progress-track"><div class="progress-fill" data-progress-fill></div></div>
+    <div class="progress-label" data-progress-label></div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow">Dominio 5 · Módulo 12 de 12</span>
+      <h1>Respuesta a incidentes y evidencia forense</h1>
+      <p class="lead">
+        Cerramos el Dominio 5 —y con él, el 100% del temario CISA— con el proceso que se activa cuando, pese a
+        todos los controles anteriores, ocurre un incidente: cómo se gestiona de principio a fin y cómo se
+        preserva la evidencia digital para que resista un eventual proceso legal. Terminamos con un repaso
+        completo de los conceptos clave del dominio.
+      </p>
+      <div class="module-meta">
+        <span class="pill">≈15 min de lectura</span>
+        <span class="pill alt">Cierre del Dominio 5</span>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">1</span> Plan de gestión de respuesta a incidentes</h2>
+      <div class="intro">
+        <p>
+          Un incidente de seguridad se gestiona siguiendo un flujo estructurado de doce etapas, desde la
+          preparación hasta el aprendizaje posterior:
+        </p>
+      </div>
+      <ul class="obj-list">
+        <li><strong>1. Planificación y preparación:</strong> se definen roles, herramientas y procedimientos antes de que ocurra un incidente.</li>
+        <li><strong>2. Detección:</strong> se identifican indicios de un posible incidente mediante monitoreo y alertas.</li>
+        <li><strong>3. Iniciación:</strong> se activa formalmente el proceso de respuesta.</li>
+        <li><strong>4. Registro:</strong> se documenta el incidente desde el primer momento.</li>
+        <li><strong>5. Evaluación:</strong> se determina el alcance, la gravedad y el impacto potencial.</li>
+        <li><strong>6. Contención:</strong> se limita la propagación del incidente.</li>
+        <li><strong>7. Erradicación:</strong> se elimina la causa raíz del incidente.</li>
+        <li><strong>8. Escalamiento:</strong> se involucra a los niveles de gestión o a las partes correspondientes según la gravedad.</li>
+        <li><strong>9. Respuesta:</strong> se ejecutan las acciones planificadas para resolver el incidente.</li>
+        <li><strong>10. Recuperación:</strong> se restablecen los sistemas y servicios afectados a su operación normal.</li>
+        <li><strong>11. Cierre e informe:</strong> se documenta formalmente el incidente y sus resultados.</li>
+        <li><strong>12. Revisión posterior y lecciones aprendidas:</strong> se analiza lo ocurrido para mejorar el plan de respuesta futuro.</li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">2</span> Evidencia forense y cadena de custodia</h2>
+      <div class="intro">
+        <p>
+          Cuando un incidente puede derivar en un proceso disciplinario o legal, la evidencia digital debe
+          protegerse con el mismo rigor que cualquier otra prueba:
+        </p>
+      </div>
+      <ul class="obj-list">
+        <li>Generar una imagen forense del sistema afectado, en lugar de trabajar directamente sobre el original.</li>
+        <li>Copiar el contenido de la memoria volátil antes de apagar cualquier equipo comprometido.</li>
+        <li>Mantener y documentar la cadena de custodia: quién manejó la evidencia, cuándo y con qué propósito, en todo momento.</li>
+      </ul>
+      <div class="callout tip">
+        <strong>Idea clave para el examen:</strong> una cadena de custodia rota —aunque la evidencia técnica sea
+        sólida— puede hacer que un tribunal la declare inadmisible; la documentación del manejo de la evidencia
+        es tan importante como la evidencia misma.
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">📘</span> Repaso del Dominio 5</h2>
+      <div class="intro">
+        <p>
+          Antes del examen final del dominio —y del curso completo—, repasa los conceptos que más se
+          relacionan entre sí a lo largo de estos 12 módulos:
+        </p>
+      </div>
+      <ul class="obj-list">
+        <li>La tríada CIA, los principios de privacidad y el análisis de impacto en la privacidad (PIA) como base de la protección de activos (Módulo 33).</li>
+        <li>Controles de acceso físico y exposiciones ambientales, y cómo los audita el auditor de SI (Módulo 34).</li>
+        <li>Objetivos de seguridad, revisiones de acceso al sistema y condiciones contractuales con terceros (Módulo 35).</li>
+        <li>Rutas de acceso lógico, MAC/DAC, identificación/autenticación (I&amp;A) y autorización (Módulo 36).</li>
+        <li>Prevención de fuga de datos (DLP), virtualización y seguridad cliente/servidor (Módulo 37).</li>
+        <li>Tipos de cortafuegos —filtrado de paquetes, gateway de aplicación, inspección de estado, NGFW y WAF (Módulo 38).</li>
+        <li>TI invisible (Shadow IT) y clasificación de la información por niveles de sensibilidad (Módulo 39).</li>
+        <li>Cifrado simétrico y asimétrico, firmas digitales y la infraestructura de clave pública (PKI) (Módulo 40).</li>
+        <li>Riesgos de BYOD, movilidad e IoT como extensión del perímetro tradicional (Módulo 41).</li>
+        <li>El triángulo del fraude y el catálogo de ataques y delitos informáticos más comunes (Módulo 42).</li>
+        <li>Pruebas de penetración, inteligencia de amenazas, SEM/SIEM y el rol del SOC (Módulo 43).</li>
+        <li>El flujo completo de respuesta a incidentes y la preservación de evidencia forense (Módulo 44).</li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">✓</span> Repasa lo aprendido</h2>
+      <div class="intro"><p>Siete preguntas rápidas antes del examen final del Dominio 5.</p></div>
+      <div id="quiz-m44"></div>
+    </section>
+
+    <div class="done-toggle">
+      <input type="checkbox" id="done-toggle-input">
+      <label for="done-toggle-input">
+        Marcar este módulo como completado
+        <span class="sub">Se guarda en este navegador y actualiza tu progreso en la portada.</span>
+      </label>
+    </div>
+
+    <div class="module-nav">
+      <a href="modulo-43-pruebas-monitoreo-seguridad.html"><span class="dir">← Anterior</span>Pruebas de penetración y monitoreo de seguridad</a>
+      <a class="next" href="glosario-dominio-5.html"><span class="dir">Siguiente →</span>Glosario del Dominio 5</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">Material de estudio elaborado a partir del contenido oficial de preparación del examen CISA (Dominio 5), con fines educativos.</div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/quiz.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    CisaStudy.initProgressStrip("m44");
+    CisaStudy.initDoneToggle("m44");
+
+    QuizEngine.renderSimpleQuiz("quiz-m44", [
+      {
+        q: "En el plan de gestión de respuesta a incidentes, ¿qué etapa ocurre inmediatamente antes de la 'erradicación'?",
+        options: ["Contención", "Cierre e informe", "Planificación y preparación", "Revisión posterior y lecciones aprendidas"], correct: 0,
+        explain: "El flujo sigue el orden: contención, erradicación, escalamiento, respuesta y recuperación, entre otras etapas."
+      },
+      {
+        q: "¿Qué se debe hacer antes de apagar un equipo comprometido durante una investigación forense?",
+        options: ["Copiar el contenido de la memoria volátil", "Formatear el disco duro inmediatamente", "Reiniciar el sistema varias veces para confirmar el problema", "Eliminar los registros de auditoría para simplificar el análisis"], correct: 0,
+        explain: "La memoria volátil se pierde al apagar el equipo, por lo que debe copiarse antes de cualquier apagado."
+      },
+      {
+        q: "¿Por qué es crítica la cadena de custodia de la evidencia digital?",
+        options: ["Porque una cadena de custodia rota puede hacer que la evidencia sea inadmisible en un proceso legal", "Porque acelera la restauración de los sistemas afectados", "Porque sustituye la necesidad de un plan de respuesta a incidentes", "Porque elimina la necesidad de generar una imagen forense"], correct: 0,
+        explain: "Documentar quién manejó la evidencia, cuándo y con qué propósito es esencial para que la evidencia sea válida legalmente."
+      },
+      {
+        q: "Repasando el Dominio 5: ¿qué distingue a un WAF de un cortafuegos de red tradicional?",
+        options: ["El WAF opera en la capa de aplicación (capa 7), mientras que el cortafuegos de red opera en las capas 3 y 4", "El WAF solo puede usarse en redes internas nunca en internet", "El WAF elimina la necesidad de cifrado en las aplicaciones web", "No existe ninguna diferencia entre ambos"], correct: 0,
+        explain: "Como se vio en el Módulo 38, el WAF opera a nivel de aplicación, mientras que los cortafuegos de red tradicionales trabajan en capas más bajas del modelo OSI."
+      },
+      {
+        q: "Repasando el Dominio 5: ¿qué diferencia al cifrado simétrico del asimétrico?",
+        options: ["El simétrico usa la misma clave para cifrar y descifrar; el asimétrico usa un par de claves pública/privada", "El asimétrico siempre requiere menos procesamiento que el simétrico", "El simétrico no puede usarse para proteger datos en tránsito", "Ambos son exactamente lo mismo con distinto nombre"], correct: 0,
+        explain: "Como se vio en el Módulo 40, el cifrado simétrico comparte una única clave, mientras que el asimétrico usa un par de claves relacionadas matemáticamente."
+      },
+      {
+        q: "Repasando el Dominio 5: ¿quién decide el nivel de clasificación de un activo de información?",
+        options: ["El propietario de la información (data owner)", "El proveedor de servicios en la nube", "El auditor de SI en todos los casos", "El departamento de recursos humanos"], correct: 0,
+        explain: "Como se vio en el Módulo 39, es el propietario de la información quien determina su nivel de clasificación."
+      },
+      {
+        q: "Repasando el Dominio 5: ¿cuál es uno de los cinco principios que guían la revisión del acceso al sistema?",
+        options: ["El privilegio mínimo (least privilege)", "La eliminación total de auditorías internas", "La ausencia de segregación de funciones", "El acceso ilimitado para todos los usuarios autenticados"], correct: 0,
+        explain: "Como se vio en el Módulo 35, el privilegio mínimo es uno de los cinco principios de revisión de acceso, junto con necesidad de saber, responsabilidad, trazabilidad y segregación de funciones."
+      }
+    ]);
+  });
+</script>
+</body>
+</html>

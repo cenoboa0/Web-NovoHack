@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 29 · Planificación de la continuidad del negocio (BCP) y gestión de desastres | Formación CISA</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-topbar">
+      <a class="catalog-link" href="../../index.html">&larr; Catálogo de cursos</a>
+    </div>
+    <a class="brand" href="index.html">
+      <span>
+        <span class="title">Formación CISA</span>
+        <span class="subtitle">Plan de estudio interactivo</span>
+      </span>
+    </a>
+    <nav class="crumbs">
+        <a href="index.html">Inicio</a>
+        <a href="modulo-1-panorama-cisa.html">1. Panorama</a>
+        <a href="modulo-2-estandares-planificacion.html">2. Estándares</a>
+        <a href="modulo-3-controles-internos.html">3. Controles</a>
+        <a href="modulo-4-auditoria-basada-riesgos.html">4. Riesgos</a>
+        <a href="modulo-5-tipos-de-auditoria.html">5. Tipos de auditoría</a>
+        <a href="modulo-6-ejecucion-y-evidencia.html">6. Ejecución</a>
+        <a href="modulo-7-informes-comunicacion.html">7. Informes</a>
+        <a href="glosario-dominio-1.html">Glosario D1</a>
+        <a href="cuestionario-final.html">Examen D1</a>
+        <a href="modulo-8-egit-marcos-gobierno.html">8. EGIT</a>
+        <a href="modulo-9-normativa-ti.html">9. Normativa TI</a>
+        <a href="modulo-10-estructura-organizacional.html">10. Estructura</a>
+        <a href="modulo-11-riesgo-empresarial.html">11. Riesgo ERM</a>
+        <a href="modulo-12-madurez-recursos.html">12. Madurez</a>
+        <a href="modulo-13-seguridad-terceros-nube.html">13. Terceros/Nube</a>
+        <a href="modulo-14-rendimiento-ti.html">14. Rendimiento TI</a>
+        <a href="glosario-dominio-2.html">Glosario D2</a>
+        <a href="cuestionario-final-2.html">Examen D2</a>
+        <a href="modulo-15-caso-negocio-factibilidad.html">15. Caso de negocio</a>
+        <a href="modulo-16-adquisicion-hardware-software.html">16. Adquisición HW/SW</a>
+        <a href="modulo-17-metodologias-prueba.html">17. Metodologías prueba</a>
+        <a href="modulo-18-gestion-configuracion-cambios.html">18. Config y cambios</a>
+        <a href="modulo-19-migracion-datos-infraestructura.html">19. Migración datos</a>
+        <a href="modulo-20-implementacion-revision-cierre.html">20. Implement. y cierre</a>
+        <a href="modulo-21-mantenimiento-rol-auditor.html">21. Mantenimiento</a>
+        <a href="glosario-dominio-3.html">Glosario D3</a>
+        <a href="cuestionario-final-3.html">Examen D3</a>
+        <a href="modulo-22-hardware-activos-interfaces.html">22. Hardware y activos</a>
+        <a href="modulo-23-euc-rendimiento-sistemas.html">23. EUC y rendimiento</a>
+        <a href="modulo-24-infraestructura-red-operaciones-si.html">24. Red y operaciones SI</a>
+        <a href="modulo-25-incidentes-problemas-soporte.html">25. Incidentes y soporte</a>
+        <a href="modulo-26-cambios-configuracion-versiones-parches.html">26. Cambios y versiones</a>
+        <a href="modulo-27-gestion-nivel-servicio-ti.html">27. Nivel de servicio TI</a>
+        <a href="modulo-28-analisis-impacto-negocio-clasificacion.html">28. BIA y criticidad</a>
+        <span class="here">29. BCP y desastres</span>
+        <a href="modulo-30-auditoria-continuidad-negocio.html">30. Auditoría BCP</a>
+        <a href="modulo-31-recuperacion-desastres-rpo-rto.html">31. DRP y RPO/RTO</a>
+        <a href="modulo-32-resiliencia-aplicaciones-almacenamiento.html">32. Resiliencia sistemas</a>
+        <a href="glosario-dominio-4.html">Glosario D4</a>
+        <a href="cuestionario-final-4.html">Examen D4</a>
+        <a href="modulo-33-seguridad-privacidad-activos.html">33. Seguridad y privacidad</a>
+        <a href="modulo-34-acceso-fisico-controles-ambientales.html">34. Acceso físico</a>
+        <a href="modulo-35-gestion-identidades-acceso.html">35. Identidades y acceso</a>
+        <a href="modulo-36-control-acceso-logico.html">36. Acceso lógico</a>
+        <a href="modulo-37-fuga-datos-virtualizacion-cliente-servidor.html">37. DLP y virtualización</a>
+        <a href="modulo-38-cortafuegos.html">38. Cortafuegos</a>
+        <a href="modulo-39-ti-invisible-clasificacion-datos.html">39. TI invisible y datos</a>
+        <a href="modulo-40-cifrado-pki.html">40. Cifrado y PKI</a>
+        <a href="modulo-41-byod-movilidad-iot.html">41. BYOD, móviles e IoT</a>
+        <a href="modulo-42-concienciacion-seguridad-ataques.html">42. Concienciación y ataques</a>
+        <a href="modulo-43-pruebas-monitoreo-seguridad.html">43. Pruebas y monitoreo</a>
+        <a href="modulo-44-respuesta-incidentes-forense.html">44. Incidentes y forense</a>
+        <a href="glosario-dominio-5.html">Glosario D5</a>
+        <a href="cuestionario-final-5.html">Examen D5</a>
+    </nav>
+  </div>
+</header>
+
+<div class="progress-strip">
+  <div class="wrap">
+    <div class="progress-track"><div class="progress-fill" data-progress-fill></div></div>
+    <div class="progress-label" data-progress-label></div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow">Dominio 4 · Módulo 8 de 11</span>
+      <h1>Planificación de la continuidad del negocio (BCP) y gestión de desastres</h1>
+      <p class="lead">
+        Con el BIA como insumo, este módulo desarrolla el plan de continuidad del negocio (BCP): su relación
+        con el plan de recuperación de desastres (DRP), el ciclo de vida completo de su elaboración, las
+        categorías de desastres que puede enfrentar una organización, los componentes que integran un BCP y
+        cómo se prueban antes de confiar en ellos.
+      </p>
+      <div class="module-meta">
+        <span class="pill">≈18 min de lectura</span>
+        <span class="pill alt">BCP, DRP y gestión de desastres</span>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">1</span> Planificación de continuidad del negocio</h2>
+      <div class="intro">
+        <p>
+          En el caso de una interrupción de las operaciones comerciales normales, el BCP y el DRP pueden
+          permitir que los procesos críticos continúen. La responsabilidad del BCP recae en la alta gerencia,
+          pero su ejecución generalmente corresponde a las unidades de negocios y de apoyo.
+        </p>
+        <p>
+          El plan debe abordar todas las funciones y los activos que se requerirán para continuar como una
+          operación viable justo después de encontrar una interrupción y mientras se lleva a cabo la
+          recuperación.
+        </p>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">2</span> Gestión de desastres y relación entre BCP y DRP</h2>
+      <div class="intro">
+        <p>
+          Un DRP de TI es un conjunto estructurado de procesos y procedimientos diseñados para acelerar la
+          respuesta y garantizar la continuidad del negocio en caso de un desastre. Se definen varias
+          funciones y responsabilidades para los equipos en el DRP, que pueden variar de una organización a
+          otra.
+        </p>
+        <p>
+          <strong>El DRP es parte del BCP.</strong> Consiste en un plan de restauración que se utilizará para
+          que las operaciones regresen a su estado normal. En general, es recomendable tener un plan
+          integrado único para garantizar que:
+        </p>
+      </div>
+      <ul class="obj-list">
+        <li>La coordinación entre los diversos componentes del plan apoya la respuesta y la recuperación.</li>
+        <li>Los recursos se utilizan de la manera más eficaz.</li>
+        <li>Se puede mantener una confianza razonable en que la empresa sobrevivirá a una interrupción.</li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">3</span> El proceso de BCP</h2>
+      <div class="intro">
+        <p>El proceso de BCP puede dividirse en las fases de su ciclo de vida:</p>
+      </div>
+      <div class="flow-diagram">
+        <div class="fnode"><strong>1. Planificación del proyecto</strong><span>Política de BC y alcance del proyecto</span></div>
+        <div class="farrow">→</div>
+        <div class="fnode"><strong>2. Evaluación y análisis de riesgos</strong></div>
+        <div class="farrow">→</div>
+        <div class="fnode"><strong>3. Análisis de impacto del negocio</strong></div>
+      </div>
+      <div class="flow-diagram">
+        <div class="fnode"><strong>4. Desarrollo de la estrategia de BC</strong></div>
+        <div class="farrow">→</div>
+        <div class="fnode"><strong>5. Ejecución de estrategia</strong><span>Implementación de contramedidas</span></div>
+        <div class="farrow">→</div>
+        <div class="fnode"><strong>6. Desarrollo del plan de BC</strong></div>
+      </div>
+      <div class="flow-diagram">
+        <div class="fnode"><strong>7. Entrenamiento y concientización en BC</strong></div>
+        <div class="farrow">→</div>
+        <div class="fnode"><strong>8. Pruebas del plan de BC</strong></div>
+        <div class="farrow">→</div>
+        <div class="fnode"><strong>9. Supervisión, mantenimiento y actualización del plan</strong></div>
+      </div>
+      <p style="color:var(--ink-700); margin-top:12px;">
+        El ciclo se retroalimenta: la supervisión y actualización del plan regresa a la planificación del
+        proyecto, cerrando un proceso continuo de mejora, no un ejercicio de una sola vez.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">4</span> Desastres e interrupciones</h2>
+      <div class="intro">
+        <p>
+          Es probable que los desastres requieran esfuerzos de recuperación para restablecer el estado
+          operativo de los recursos de información. Las categorías de los desastres incluyen:
+        </p>
+      </div>
+      <ul class="obj-list">
+        <li>Catástrofes naturales.</li>
+        <li>Pandemias, epidemias u otros brotes infecciosos.</li>
+        <li>Interrupciones de servicios públicos.</li>
+        <li>Acciones de los seres humanos, que causan daño intencional o accidental.</li>
+        <li>Fallos de hardware o software.</li>
+        <li>Incidentes que causan daños a la imagen, reputación o marca.</li>
+      </ul>
+      <p style="color:var(--ink-700);">
+        Algunos acontecimientos son imprevisibles. Estos acontecimientos se denominan eventos de
+        <strong>"cisne negro"</strong>.
+      </p>
+
+      <h3 style="margin-top:20px;">La política de continuidad del negocio</h3>
+      <p style="color:var(--ink-700);">
+        Una política de continuidad del negocio debe ser proactiva y transmitir el mensaje de que deben
+        utilizarse todos los controles posibles para detectar y prevenir interrupciones. Es un documento
+        aprobado por la alta gerencia que:
+      </p>
+      <ul class="obj-list">
+        <li>Lleva el mensaje a los grupos de interés internos de que la organización está comprometida con la continuidad del negocio.</li>
+        <li>Como una declaración a la organización, da poder a aquellos que son responsables de la continuidad del negocio.</li>
+        <li>Comunica a las partes interesadas externas que se toman en serio las obligaciones, como la prestación de servicios y el cumplimiento.</li>
+      </ul>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">5</span> Mitigación y gestión de incidentes de BCP</h2>
+      <div class="intro">
+        <p>
+          Las contramedidas se organizan en dos frentes: reducir la probabilidad de que ocurra un incidente
+          (con controles detectivos y preventivos como la supervisión de infraestructura, la gestión de
+          capacidades o el sitio de procesamiento alternativo) y mitigar sus consecuencias una vez ocurrido
+          (con controles correctivos como el respaldo y recuperación, el BCP/DRP de TI, las cláusulas
+          especiales de los contratos de proveedores, y los generadores de energía o UPS).
+        </p>
+        <p>
+          Por su naturaleza, los incidentes y las crisis a menudo se desarrollan de forma dinámica y rápida en
+          direcciones imprevisibles. La gestión de esas situaciones requiere un enfoque proactivo y
+          documentación de apoyo. Todos los incidentes deben clasificarse en uno de los siguientes niveles:
+        </p>
+      </div>
+      <ul class="obj-list">
+        <li><strong>Insignificantes:</strong> no causan daños perceptibles.</li>
+        <li><strong>Menores:</strong> no producen ningún impacto financiero o material negativo.</li>
+        <li><strong>Mayores:</strong> causan un impacto material negativo en los procesos de negocio; posibles efectos en otros sistemas, departamentos o partes interesadas externas.</li>
+        <li><strong>Crisis:</strong> tienen como resultado un grave impacto material en el funcionamiento continuo de la empresa y sus grupos de interés.</li>
+      </ul>
+      <div class="callout warn">
+        <strong>Para el examen:</strong> la clasificación de un incidente puede cambiar a medida que se
+        producen los eventos —no es una etiqueta fija asignada al inicio. Si el punto en el que una situación
+        se declara "crisis" no está definido, el riesgo más grande es que el reconocimiento de crisis
+        potenciales no sea efectivo.
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">6</span> Componentes del plan de BCP</h2>
+      <div class="term-grid">
+        <div class="term"><h3>Plan de continuidad de las operaciones</h3><p>Asegura que las funciones esenciales del negocio sigan operando durante una interrupción.</p></div>
+        <div class="term"><h3>Plan de recuperación de desastre</h3><p>Restaura la capacidad técnica de TI tras un desastre.</p></div>
+        <div class="term"><h3>Plan de restablecimiento del negocio</h3><p>Guía el retorno a las operaciones normales tras la recuperación.</p></div>
+        <div class="term"><h3>Plan de contingencia de TI</h3><p>Cubre la respuesta técnica específica ante fallos de sistemas.</p></div>
+        <div class="term"><h3>Plan de comunicaciones críticas</h3><p>Define cómo y con quién se comunica la organización durante una crisis.</p></div>
+        <div class="term"><h3>Plan de respuesta a incidentes</h3><p>Detalla los pasos inmediatos ante un incidente de seguridad o de operación.</p></div>
+        <div class="term"><h3>Plan de transporte</h3><p>Organiza el traslado de personal o equipos durante una emergencia.</p></div>
+        <div class="term"><h3>Plan de emergencia del ocupante</h3><p>Protege la seguridad física de las personas en las instalaciones.</p></div>
+        <div class="term"><h3>Plan de evacuación</h3><p>Establece los procedimientos para desalojar instalaciones de forma segura.</p></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">7</span> Pruebas del plan</h2>
+      <div class="intro">
+        <p>
+          Los componentes críticos de un BCP deben ser probados bajo condiciones simuladas para lograr
+          objetivos como estos:
+        </p>
+      </div>
+      <ul class="obj-list">
+        <li>Verificar la exactitud e integridad del BCP.</li>
+        <li>Evaluar el desempeño del personal involucrado.</li>
+        <li>Evaluar la coordinación entre los miembros del equipo de respuesta y las partes externas.</li>
+        <li>Medir la capacidad de cualquier sitio de copia de respaldo para que funcione como se espera.</li>
+      </ul>
+      <p style="color:var(--ink-700);">
+        La evaluación de los resultados y el valor de las pruebas de BCP es una responsabilidad importante
+        para el auditor de SI.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2><span class="num">✓</span> Repasa lo aprendido</h2>
+      <div class="intro"><p>Siete preguntas rápidas antes de avanzar al módulo 30.</p></div>
+      <div id="quiz-m29"></div>
+    </section>
+
+    <div class="done-toggle">
+      <input type="checkbox" id="done-toggle-input">
+      <label for="done-toggle-input">
+        Marcar este módulo como completado
+        <span class="sub">Se guarda en este navegador y actualiza tu progreso en la portada.</span>
+      </label>
+    </div>
+
+    <div class="module-nav">
+      <a href="modulo-28-analisis-impacto-negocio-clasificacion.html"><span class="dir">← Anterior</span>Análisis de impacto en el negocio y clasificación de operaciones</a>
+      <a class="next" href="modulo-30-auditoria-continuidad-negocio.html"><span class="dir">Siguiente →</span>Auditoría de la continuidad del negocio</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">Material de estudio elaborado a partir del contenido oficial de preparación del examen CISA (Dominio 4), con fines educativos.</div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/quiz.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    CisaStudy.initProgressStrip("m29");
+    CisaStudy.initDoneToggle("m29");
+
+    QuizEngine.renderSimpleQuiz("quiz-m29", [
+      {
+        q: "¿En quién recae la responsabilidad del plan de continuidad del negocio (BCP)?",
+        options: ["En la alta gerencia, aunque su ejecución corresponda a las unidades de negocio y de apoyo", "Exclusivamente en el departamento de TI", "Únicamente en el auditor externo", "En el proveedor de servicios en la nube"],
+        correct: 0,
+        explain: "La responsabilidad del BCP recae en la alta gerencia, aunque la ejecución práctica corresponda a las unidades de negocio y de apoyo."
+      },
+      {
+        q: "¿Cuál es la relación entre el DRP y el BCP?",
+        options: ["El DRP es parte del BCP y consiste en un plan de restauración para volver al estado normal", "El BCP es un subconjunto del DRP", "No existe relación entre ambos planes", "El DRP reemplaza por completo al BCP"],
+        correct: 0,
+        explain: "El DRP es parte del BCP; se enfoca en restaurar las operaciones a su estado normal tras una interrupción."
+      },
+      {
+        q: "¿Cómo se denominan los acontecimientos imprevisibles dentro de las categorías de desastres?",
+        options: ["Eventos de \"cisne negro\"", "Eventos de \"caja negra\"", "Incidentes menores", "Amenazas persistentes avanzadas"],
+        correct: 0,
+        explain: "Los acontecimientos imprevisibles se denominan eventos de \"cisne negro\"."
+      },
+      {
+        q: "Según la clasificación de incidentes en la gestión de BCP, ¿qué nivel causa un impacto material negativo en los procesos de negocio con posibles efectos en otros sistemas o partes externas?",
+        options: ["Mayores", "Insignificantes", "Menores", "Ninguno de los anteriores, todos los incidentes son iguales"],
+        correct: 0,
+        explain: "Los incidentes clasificados como 'mayores' causan un impacto material negativo con posibles efectos en otros sistemas o partes interesadas."
+      },
+      {
+        q: "Si en un plan de continuidad del negocio no se ha definido el punto en el que una situación se declara como crisis, ¿cuál es el riesgo MÁS grande asociado?",
+        options: ["Que el reconocimiento de crisis potenciales no sea efectivo", "Que el plan de recuperación de desastres deje de existir", "Que se elimine automáticamente el BCP", "Que ya no se necesiten pruebas del plan"],
+        correct: 0,
+        explain: "Sin un punto claro para declarar una crisis, el mayor riesgo es que la organización no reconozca a tiempo cuándo una situación realmente lo es."
+      },
+      {
+        q: "¿Cuál de los siguientes es un componente típico del plan de BCP?",
+        options: ["El plan de comunicaciones críticas", "El plan de marketing digital", "El plan de expansión internacional", "El plan de compensaciones ejecutivas"],
+        correct: 0,
+        explain: "El plan de comunicaciones críticas es uno de los componentes que integran un BCP completo."
+      },
+      {
+        q: "¿Cuál es uno de los objetivos de probar los componentes críticos de un BCP bajo condiciones simuladas?",
+        options: ["Medir la capacidad de cualquier sitio de copia de respaldo para que funcione como se espera", "Reducir el presupuesto asignado a TI", "Eliminar la necesidad de un plan de comunicaciones", "Evitar que el personal participe en las pruebas"],
+        correct: 0,
+        explain: "Uno de los objetivos de las pruebas del BCP es verificar que los sitios de respaldo funcionen tal como se espera."
+      }
+    ]);
+  });
+</script>
+</body>
+</html>
